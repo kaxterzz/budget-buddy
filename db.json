@@ -1,0 +1,92 @@
+{
+  "expenses": [
+    {
+      "id": "1",
+      "description": "Grocery shopping",
+      "amount": 80,
+      "category": "Shopping",
+      "date": "2025-08-05",
+      "createdAt": "2025-01-15T10:30:00Z"
+    },
+    {
+      "id": "2",
+      "description": "Gas station",
+      "amount": 45.2,
+      "category": "Transportation",
+      "date": "2025-08-14",
+      "createdAt": "2025-01-14T16:45:00Z"
+    },
+    {
+      "id": "3",
+      "description": "Movie tickets",
+      "amount": 24,
+      "category": "Entertainment",
+      "date": "2025-08-13",
+      "createdAt": "2025-01-13T19:15:00Z"
+    }
+  ],
+  "budgets": [
+    {
+      "id": "1",
+      "category": "Food",
+      "monthlyLimit": 400,
+      "month": "2025-08",
+      "spent": 85.5,
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "category": "Transportation",
+      "monthlyLimit": 200,
+      "month": "2025-08",
+      "spent": 45.2,
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "category": "Entertainment",
+      "monthlyLimit": 150,
+      "month": "2025-08",
+      "spent": 24,
+      "createdAt": "2025-01-01T00:00:00Z"
+    },
+    {
+      "id": "284b",
+      "category": "Utilities",
+      "monthlyLimit": 350,
+      "month": "2025-07",
+      "spent": 0,
+      "createdAt": "2025-08-05T14:26:02.541Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Food"
+    },
+    {
+      "id": "2",
+      "name": "Transportation"
+    },
+    {
+      "id": "3",
+      "name": "Entertainment"
+    },
+    {
+      "id": "4",
+      "name": "Utilities"
+    },
+    {
+      "id": "5",
+      "name": "Healthcare"
+    },
+    {
+      "id": "6",
+      "name": "Shopping"
+    },
+    {
+      "id": "7",
+      "name": "Other"
+    }
+  ]
+}
