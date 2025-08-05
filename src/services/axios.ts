@@ -10,7 +10,7 @@ export const axiosInstance = axios.create({
     'Content-Type': 'application/json',
     'Accept': 'application/json'
   },
-  withCredentials: false // We don't need cookies for our JSON server
+  withCredentials: false // Don't need cookies
 })
 
 // Request interceptor - for debugging API calls
@@ -18,7 +18,7 @@ axiosInstance.interceptors.request.use(
   (config) => {
     console.log(`Making ${config.method?.toUpperCase()} request to: ${config.url}`)
     
-    // Uncomment if you add authentication
+    // For authentication
     // config.headers.Authorization = `Bearer ${token}`
     
     return config
