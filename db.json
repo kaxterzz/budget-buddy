@@ -3,7 +3,7 @@
     {
       "id": "1",
       "description": "Grocery shopping",
-      "amount": 80,
+      "amount": 85,
       "category": "Shopping",
       "date": "2025-08-05",
       "createdAt": "2025-01-15T10:30:00Z"
@@ -23,6 +23,14 @@
       "category": "Entertainment",
       "date": "2025-08-13",
       "createdAt": "2025-01-13T19:15:00Z"
+    },
+    {
+      "id": "aa5e",
+      "description": "Petrol",
+      "amount": 60,
+      "category": "Transportation",
+      "date": "2025-08-05",
+      "createdAt": "2025-08-05T19:38:16.806Z"
     }
   ],
   "budgets": [
