@@ -79,8 +79,8 @@
 
     { "id": "13", "category": "Food", "monthlyLimit": 400, "month": "2025-07", "spent": 132, "createdAt": "2025-07-01T00:00:00Z" },
     { "id": "14", "category": "Transportation", "monthlyLimit": 200, "month": "2025-07", "spent": 60, "createdAt": "2025-07-01T00:00:00Z" },
-    { "id": "15", "category": "Entertainment", "monthlyLimit": 150, "month": "2025-07", "spent": 24, "createdAt": "2025-07-01T00:00:00Z" },
-    { "id": "16", "category": "Utilities", "monthlyLimit": 350, "month": "2025-07", "spent": 230, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "15", "category": "Entertainment", "monthlyLimit": 50, "month": "2025-07", "spent": 24, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "16", "category": "Utilities", "monthlyLimit": 300, "month": "2025-07", "spent": 230, "createdAt": "2025-07-01T00:00:00Z" },
     { "id": "17", "category": "Healthcare", "monthlyLimit": 300, "month": "2025-07", "spent": 292, "createdAt": "2025-07-01T00:00:00Z" },
     { "id": "18", "category": "Shopping", "monthlyLimit": 500, "month": "2025-07", "spent": 310, "createdAt": "2025-07-01T00:00:00Z" },
 

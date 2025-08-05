@@ -22,14 +22,22 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Chart } from '@/components/chart'
+import { Button } from '@/components/ui/button'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select'
 import { useExpenses } from '@/hooks/use-expenses'
 import { useBudgets } from '@/hooks/use-budgets'
 import { useUIStore } from '@/store/use-ui-store'
 import { Receipt, TrendingUp, TrendingDown, Calendar } from 'lucide-react'
-import { useMemo } from 'react'
+import { useMemo, useEffect } from 'react'
 
 export default function DashboardPage() {
-  const { selectedMonth } = useUIStore()
+  const { selectedMonth, setSelectedMonth } = useUIStore()
   const { data: expenses = [], isLoading: expensesLoading } = useExpenses()
   const { data: budgets = [], isLoading: budgetsLoading } = useBudgets()
 
@@ -39,17 +47,17 @@ export default function DashboardPage() {
     if (!expenses || !budgets || !Array.isArray(expenses) || !Array.isArray(budgets)) return null
 
     // Only look at expenses from the currently selected month
-    const currentMonthExpenses = expenses.filter(expense => 
+    const currentMonthExpenses = expenses.filter(expense =>
       expense.date.startsWith(selectedMonth)
     )
-    
+
     // Add up all the money spent this month
     const totalMonthlySpend = currentMonthExpenses.reduce((sum, expense) => sum + expense.amount, 0)
-    
+
     // Find budgets for the current month and add them up
     const currentMonthBudgets = budgets.filter(budget => budget.month === selectedMonth)
     const totalBudget = currentMonthBudgets.reduce((sum, budget) => sum + budget.monthlyLimit, 0)
-    
+
     // Figure out how much budget is left (could be negative if over budget!)
     const remainingBudget = totalBudget - totalMonthlySpend
 
@@ -76,6 +84,19 @@ export default function DashboardPage() {
       recentExpenses: expenses.slice(0, 5), // Show the 5 most recent expenses
     }
   }, [expenses, budgets, selectedMonth])
+
+  // Generate month options for filtering
+  const monthOptions = useMemo(() => {
+    const uniqueMonths = [...new Set(expenses.map(expense => expense.date.slice(0, 7)))].sort().reverse()
+    return uniqueMonths.map(month => ({
+      value: month,
+      label: new Date(month + '-01').toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+    }))
+  }, [expenses])
+
+  useEffect(() => {
+    console.log("Selected month:", selectedMonth)
+  }, [selectedMonth])
 
   if (expensesLoading || budgetsLoading) {
     return (
@@ -118,13 +139,31 @@ export default function DashboardPage() {
 
   return (
     <div className="space-y-6 mx-4">
-      <div>
-        <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
-        <p className="text-muted-foreground">
-          Overview of your expenses and budgets for {new Date(selectedMonth + '-01').toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
-        </p>
+      <div className='flex flex-col md:flex-row justify-between items-center'>
+        <div>
+          <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
+          <p className="text-muted-foreground">
+            Overview of your expenses and budgets for {new Date(selectedMonth + '-01').toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
+          </p>
+        </div>
+        <div className="flex items-center gap-2">
+          <Select value={selectedMonth || undefined} onValueChange={(value) => setSelectedMonth(value === 'all' ? '' : value)}>
+            <SelectTrigger className="w-[200px]">
+              <SelectValue placeholder="All months" />
+            </SelectTrigger>
+            <SelectContent>
+              {monthOptions.map((option) => (
+                <SelectItem key={option.value} value={option.value}>
+                  {option.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
       </div>
-      
+
+
+
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -184,9 +223,9 @@ export default function DashboardPage() {
             <CardTitle>Category Breakdown</CardTitle>
           </CardHeader>
           <CardContent>
-            <Chart 
-              data={dashboardMetrics.categoryData} 
-              type="pie" 
+            <Chart
+              data={dashboardMetrics.categoryData}
+              type="pie"
               height={350}
             />
           </CardContent>
