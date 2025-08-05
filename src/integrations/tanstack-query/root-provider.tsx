@@ -1,4 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { Toaster } from "@/components/ui/sonner"
 
 export function getContext() {
   const queryClient = new QueryClient()
@@ -15,6 +16,9 @@ export function Provider({
   queryClient: QueryClient
 }) {
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      {children}
+      <Toaster />
+    </QueryClientProvider>
   )
 }
