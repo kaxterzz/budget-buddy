@@ -1,92 +1,103 @@
 {
   "expenses": [
-    {
-      "id": "1",
-      "description": "Grocery shopping",
-      "amount": 80,
-      "category": "Shopping",
-      "date": "2025-08-05",
-      "createdAt": "2025-01-15T10:30:00Z"
-    },
-    {
-      "id": "2",
-      "description": "Gas station",
-      "amount": 45.2,
-      "category": "Transportation",
-      "date": "2025-08-14",
-      "createdAt": "2025-01-14T16:45:00Z"
-    },
-    {
-      "id": "3",
-      "description": "Movie tickets",
-      "amount": 24,
-      "category": "Entertainment",
-      "date": "2025-08-13",
-      "createdAt": "2025-01-13T19:15:00Z"
-    }
+    { "id": "1", "description": "Grocery shopping", "amount": 85, "category": "Shopping", "date": "2025-08-05", "createdAt": "2025-01-15T10:30:00Z" },
+    { "id": "2", "description": "Gas station", "amount": 45.2, "category": "Transportation", "date": "2025-08-14", "createdAt": "2025-01-14T16:45:00Z" },
+    { "id": "3", "description": "Movie tickets", "amount": 24, "category": "Entertainment", "date": "2025-08-13", "createdAt": "2025-01-13T19:15:00Z" },
+    { "id": "aa5e", "description": "Petrol", "amount": 60, "category": "Transportation", "date": "2025-08-05", "createdAt": "2025-08-05T19:38:16.806Z" },
+    { "id": "4", "description": "Dinner out", "amount": 40, "category": "Food", "date": "2025-05-01", "createdAt": "2025-05-01T18:00:00Z" },
+    { "id": "5", "description": "Bus ticket", "amount": 3, "category": "Transportation", "date": "2025-05-02", "createdAt": "2025-05-02T08:30:00Z" },
+    { "id": "6", "description": "Electricity bill", "amount": 60, "category": "Utilities", "date": "2025-05-03", "createdAt": "2025-05-03T12:00:00Z" },
+    { "id": "7", "description": "Doctor visit", "amount": 120, "category": "Healthcare", "date": "2025-05-04", "createdAt": "2025-05-04T09:00:00Z" },
+    { "id": "8", "description": "Clothes shopping", "amount": 75, "category": "Shopping", "date": "2025-05-05", "createdAt": "2025-05-05T15:00:00Z" },
+    { "id": "9", "description": "Lunch", "amount": 15, "category": "Food", "date": "2025-05-06", "createdAt": "2025-05-06T13:00:00Z" },
+    { "id": "10", "description": "Taxi", "amount": 20, "category": "Transportation", "date": "2025-05-07", "createdAt": "2025-05-07T22:00:00Z" },
+    { "id": "11", "description": "Internet bill", "amount": 45, "category": "Utilities", "date": "2025-05-08", "createdAt": "2025-05-08T10:00:00Z" },
+    { "id": "12", "description": "Pharmacy", "amount": 30, "category": "Healthcare", "date": "2025-05-09", "createdAt": "2025-05-09T17:00:00Z" },
+    { "id": "13", "description": "Books", "amount": 25, "category": "Shopping", "date": "2025-05-10", "createdAt": "2025-05-10T14:00:00Z" },
+    { "id": "14", "description": "Breakfast", "amount": 10, "category": "Food", "date": "2025-05-11", "createdAt": "2025-05-11T08:00:00Z" },
+    { "id": "15", "description": "Train ticket", "amount": 8, "category": "Transportation", "date": "2025-05-12", "createdAt": "2025-05-12T07:00:00Z" },
+    { "id": "16", "description": "Water bill", "amount": 25, "category": "Utilities", "date": "2025-05-13", "createdAt": "2025-05-13T11:00:00Z" },
+    { "id": "17", "description": "Dentist", "amount": 90, "category": "Healthcare", "date": "2025-05-14", "createdAt": "2025-05-14T16:00:00Z" },
+    { "id": "18", "description": "Shoes", "amount": 60, "category": "Shopping", "date": "2025-05-15", "createdAt": "2025-05-15T13:00:00Z" },
+    { "id": "19", "description": "Dinner", "amount": 35, "category": "Food", "date": "2025-05-16", "createdAt": "2025-05-16T19:00:00Z" },
+    { "id": "20", "description": "Bus ticket", "amount": 3, "category": "Transportation", "date": "2025-05-17", "createdAt": "2025-05-17T08:30:00Z" },
+    { "id": "21", "description": "Gas bill", "amount": 50, "category": "Utilities", "date": "2025-05-18", "createdAt": "2025-05-18T12:00:00Z" },
+    { "id": "22", "description": "Medicine", "amount": 25, "category": "Healthcare", "date": "2025-05-19", "createdAt": "2025-05-19T09:00:00Z" },
+    { "id": "23", "description": "Gift", "amount": 40, "category": "Shopping", "date": "2025-05-20", "createdAt": "2025-05-20T15:00:00Z" },
+    { "id": "24", "description": "Lunch", "amount": 18, "category": "Food", "date": "2025-05-21", "createdAt": "2025-05-21T13:00:00Z" },
+    { "id": "25", "description": "Taxi", "amount": 22, "category": "Transportation", "date": "2025-05-22", "createdAt": "2025-05-22T22:00:00Z" },
+    { "id": "26", "description": "Mobile bill", "amount": 30, "category": "Utilities", "date": "2025-05-23", "createdAt": "2025-05-23T10:00:00Z" },
+    { "id": "27", "description": "Clinic", "amount": 60, "category": "Healthcare", "date": "2025-05-24", "createdAt": "2025-05-24T17:00:00Z" },
+    { "id": "28", "description": "Online shopping", "amount": 90, "category": "Shopping", "date": "2025-05-25", "createdAt": "2025-05-25T14:00:00Z" },
+    { "id": "29", "description": "Breakfast", "amount": 12, "category": "Food", "date": "2025-05-26", "createdAt": "2025-05-26T08:00:00Z" },
+    { "id": "30", "description": "Train ticket", "amount": 7, "category": "Transportation", "date": "2025-05-27", "createdAt": "2025-05-27T07:00:00Z" },
+    { "id": "31", "description": "Electricity bill", "amount": 65, "category": "Utilities", "date": "2025-06-01", "createdAt": "2025-06-01T12:00:00Z" },
+    { "id": "32", "description": "Doctor visit", "amount": 110, "category": "Healthcare", "date": "2025-06-02", "createdAt": "2025-06-02T09:00:00Z" },
+    { "id": "33", "description": "Clothes shopping", "amount": 80, "category": "Shopping", "date": "2025-06-03", "createdAt": "2025-06-03T15:00:00Z" },
+    { "id": "34", "description": "Lunch", "amount": 16, "category": "Food", "date": "2025-06-04", "createdAt": "2025-06-04T13:00:00Z" },
+    { "id": "35", "description": "Taxi", "amount": 18, "category": "Transportation", "date": "2025-06-05", "createdAt": "2025-06-05T22:00:00Z" },
+    { "id": "36", "description": "Internet bill", "amount": 48, "category": "Utilities", "date": "2025-06-06", "createdAt": "2025-06-06T10:00:00Z" },
+    { "id": "37", "description": "Pharmacy", "amount": 28, "category": "Healthcare", "date": "2025-06-07", "createdAt": "2025-06-07T17:00:00Z" },
+    { "id": "38", "description": "Books", "amount": 22, "category": "Shopping", "date": "2025-06-08", "createdAt": "2025-06-08T14:00:00Z" },
+    { "id": "39", "description": "Breakfast", "amount": 11, "category": "Food", "date": "2025-06-09", "createdAt": "2025-06-09T08:00:00Z" },
+    { "id": "40", "description": "Train ticket", "amount": 9, "category": "Transportation", "date": "2025-06-10", "createdAt": "2025-06-10T07:00:00Z" },
+    { "id": "41", "description": "Water bill", "amount": 27, "category": "Utilities", "date": "2025-06-11", "createdAt": "2025-06-11T11:00:00Z" },
+    { "id": "42", "description": "Dentist", "amount": 95, "category": "Healthcare", "date": "2025-06-12", "createdAt": "2025-06-12T16:00:00Z" },
+    { "id": "43", "description": "Shoes", "amount": 65, "category": "Shopping", "date": "2025-06-13", "createdAt": "2025-06-13T13:00:00Z" },
+    { "id": "44", "description": "Dinner", "amount": 38, "category": "Food", "date": "2025-06-14", "createdAt": "2025-06-14T19:00:00Z" },
+    { "id": "45", "description": "Bus ticket", "amount": 4, "category": "Transportation", "date": "2025-06-15", "createdAt": "2025-06-15T08:30:00Z" },
+    { "id": "46", "description": "Gas bill", "amount": 52, "category": "Utilities", "date": "2025-06-16", "createdAt": "2025-06-16T12:00:00Z" },
+    { "id": "47", "description": "Medicine", "amount": 27, "category": "Healthcare", "date": "2025-06-17", "createdAt": "2025-06-17T09:00:00Z" },
+    { "id": "48", "description": "Gift", "amount": 42, "category": "Shopping", "date": "2025-06-18", "createdAt": "2025-06-18T15:00:00Z" },
+    { "id": "49", "description": "Lunch", "amount": 19, "category": "Food", "date": "2025-06-19", "createdAt": "2025-06-19T13:00:00Z" },
+    { "id": "50", "description": "Taxi", "amount": 21, "category": "Transportation", "date": "2025-06-20", "createdAt": "2025-06-20T22:00:00Z" },
+    { "id": "51", "description": "Mobile bill", "amount": 32, "category": "Utilities", "date": "2025-06-21", "createdAt": "2025-06-21T10:00:00Z" },
+    { "id": "52", "description": "Clinic", "amount": 62, "category": "Healthcare", "date": "2025-06-22", "createdAt": "2025-06-22T17:00:00Z" },
+    { "id": "53", "description": "Online shopping", "amount": 95, "category": "Shopping", "date": "2025-06-23", "createdAt": "2025-06-23T14:00:00Z" },
+    { "id": "54", "description": "Breakfast", "amount": 13, "category": "Food", "date": "2025-06-24", "createdAt": "2025-06-24T08:00:00Z" },
+    { "id": "55", "description": "Train ticket", "amount": 8, "category": "Transportation", "date": "2025-06-25", "createdAt": "2025-06-25T07:00:00Z" },
+    { "id": "56", "description": "Electricity bill", "amount": 70, "category": "Utilities", "date": "2025-07-01", "createdAt": "2025-07-01T12:00:00Z" },
+    { "id": "57", "description": "Doctor visit", "amount": 115, "category": "Healthcare", "date": "2025-07-02", "createdAt": "2025-07-02T09:00:00Z" },
+    { "id": "58", "description": "Clothes shopping", "amount": 85, "category": "Shopping", "date": "2025-07-03", "createdAt": "2025-07-03T15:00:00Z" },
+    { "id": "59", "description": "Lunch", "amount": 17, "category": "Food", "date": "2025-07-04", "createdAt": "2025-07-04T13:00:00Z" },
+    { "id": "60", "description": "Taxi", "amount": 19, "category": "Transportation", "date": "2025-07-05", "createdAt": "2025-07-05T22:00:00Z" }
   ],
   "budgets": [
-    {
-      "id": "1",
-      "category": "Food",
-      "monthlyLimit": 400,
-      "month": "2025-08",
-      "spent": 85.5,
-      "createdAt": "2025-01-01T00:00:00Z"
-    },
-    {
-      "id": "2",
-      "category": "Transportation",
-      "monthlyLimit": 200,
-      "month": "2025-08",
-      "spent": 45.2,
-      "createdAt": "2025-01-01T00:00:00Z"
-    },
-    {
-      "id": "3",
-      "category": "Entertainment",
-      "monthlyLimit": 150,
-      "month": "2025-08",
-      "spent": 24,
-      "createdAt": "2025-01-01T00:00:00Z"
-    },
-    {
-      "id": "284b",
-      "category": "Utilities",
-      "monthlyLimit": 350,
-      "month": "2025-07",
-      "spent": 0,
-      "createdAt": "2025-08-05T14:26:02.541Z"
-    }
+    { "id": "1", "category": "Food", "monthlyLimit": 400, "month": "2025-05", "spent": 130, "createdAt": "2025-05-01T00:00:00Z" },
+    { "id": "2", "category": "Transportation", "monthlyLimit": 200, "month": "2025-05", "spent": 56, "createdAt": "2025-05-01T00:00:00Z" },
+    { "id": "3", "category": "Entertainment", "monthlyLimit": 150, "month": "2025-05", "spent": 24, "createdAt": "2025-05-01T00:00:00Z" },
+    { "id": "4", "category": "Utilities", "monthlyLimit": 350, "month": "2025-05", "spent": 210, "createdAt": "2025-05-01T00:00:00Z" },
+    { "id": "5", "category": "Healthcare", "monthlyLimit": 300, "month": "2025-05", "spent": 325, "createdAt": "2025-05-01T00:00:00Z" },
+    { "id": "6", "category": "Shopping", "monthlyLimit": 500, "month": "2025-05", "spent": 300, "createdAt": "2025-05-01T00:00:00Z" },
+
+    { "id": "7", "category": "Food", "monthlyLimit": 400, "month": "2025-06", "spent": 135, "createdAt": "2025-06-01T00:00:00Z" },
+    { "id": "8", "category": "Transportation", "monthlyLimit": 200, "month": "2025-06", "spent": 59, "createdAt": "2025-06-01T00:00:00Z" },
+    { "id": "9", "category": "Entertainment", "monthlyLimit": 150, "month": "2025-06", "spent": 24, "createdAt": "2025-06-01T00:00:00Z" },
+    { "id": "10", "category": "Utilities", "monthlyLimit": 350, "month": "2025-06", "spent": 234, "createdAt": "2025-06-01T00:00:00Z" },
+    { "id": "11", "category": "Healthcare", "monthlyLimit": 300, "month": "2025-06", "spent": 327, "createdAt": "2025-06-01T00:00:00Z" },
+    { "id": "12", "category": "Shopping", "monthlyLimit": 500, "month": "2025-06", "spent": 312, "createdAt": "2025-06-01T00:00:00Z" },
+
+    { "id": "13", "category": "Food", "monthlyLimit": 400, "month": "2025-07", "spent": 132, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "14", "category": "Transportation", "monthlyLimit": 200, "month": "2025-07", "spent": 60, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "15", "category": "Entertainment", "monthlyLimit": 50, "month": "2025-07", "spent": 24, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "16", "category": "Utilities", "monthlyLimit": 300, "month": "2025-07", "spent": 230, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "17", "category": "Healthcare", "monthlyLimit": 300, "month": "2025-07", "spent": 292, "createdAt": "2025-07-01T00:00:00Z" },
+    { "id": "18", "category": "Shopping", "monthlyLimit": 500, "month": "2025-07", "spent": 310, "createdAt": "2025-07-01T00:00:00Z" },
+
+    { "id": "19", "category": "Food", "monthlyLimit": 400, "month": "2025-08", "spent": 85.5, "createdAt": "2025-08-01T00:00:00Z" },
+    { "id": "20", "category": "Transportation", "monthlyLimit": 200, "month": "2025-08", "spent": 105.2, "createdAt": "2025-08-01T00:00:00Z" },
+    { "id": "21", "category": "Entertainment", "monthlyLimit": 150, "month": "2025-08", "spent": 24, "createdAt": "2025-08-01T00:00:00Z" },
+    { "id": "22", "category": "Utilities", "monthlyLimit": 350, "month": "2025-08", "spent": 0, "createdAt": "2025-08-01T00:00:00Z" },
+    { "id": "23", "category": "Healthcare", "monthlyLimit": 300, "month": "2025-08", "spent": 0, "createdAt": "2025-08-01T00:00:00Z" },
+    { "id": "24", "category": "Shopping", "monthlyLimit": 500, "month": "2025-08", "spent": 85, "createdAt": "2025-08-01T00:00:00Z" }
   ],
   "categories": [
-    {
-      "id": "1",
-      "name": "Food"
-    },
-    {
-      "id": "2",
-      "name": "Transportation"
-    },
-    {
-      "id": "3",
-      "name": "Entertainment"
-    },
-    {
-      "id": "4",
-      "name": "Utilities"
-    },
-    {
-      "id": "5",
-      "name": "Healthcare"
-    },
-    {
-      "id": "6",
-      "name": "Shopping"
-    },
-    {
-      "id": "7",
-      "name": "Other"
-    }
+    { "id": "1", "name": "Food" },
+    { "id": "2", "name": "Transportation" },
+    { "id": "3", "name": "Entertainment" },
+    { "id": "4", "name": "Utilities" },
+    { "id": "5", "name": "Healthcare" },
+    { "id": "6", "name": "Shopping" },
+    { "id": "7", "name": "Other" }
   ]
 }
