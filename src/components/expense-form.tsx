@@ -1,3 +1,9 @@
+/**
+ * ExpenseForm - Form to create or edit expenses with validation
+ * Props: expense?, onSuccess?, onCancel?, showAsCard?
+ */
+
+
 import { useForm } from 'react-hook-form'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -16,11 +22,6 @@ import { useUIStore } from '@/store/use-ui-store'
 import { type Expense } from '@/services/expense-service'
 import { useEffect } from 'react'
 import { X } from 'lucide-react'
-
-/**
- * ExpenseForm - Form to create or edit expenses with validation
- * Props: expense?, onSuccess?, onCancel?, showAsCard?
- */
 
 // Form data shape - matches our Expense interface but with string amounts for form handling
 interface ExpenseFormData {

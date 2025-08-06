@@ -1,3 +1,8 @@
+/** 
+ * Footer component
+ * Shows details about project
+*/
+
 import { Heart } from "lucide-react"
 
 export function Footer() {
